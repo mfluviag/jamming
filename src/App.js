@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import Search from './components/search-bar.tsx';
+import Results from './components/results.tsx';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        ja<span style={{ color: "violet" }}>mmm</span>ing
       </header>
+
+      <form className='Search-form'>
+        <Search/>
+        <input className='button' type="submit" value="SEARCH"/>
+      </form>
+
+      <div className="Container-main">
+        <div className="Container-results">
+          <Results/>
+        </div>
+        <div className="Container-results">
+          x
+        </div>
+      </div>
     </div>
   );
 }

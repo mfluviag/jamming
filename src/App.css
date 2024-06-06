@@ -1,11 +1,12 @@
 .App {
   text-align: center;
+  background-image: url('./resources/104456_violet-blestyashki-line-download-powerpoint-backgrounds-ppt_2560x1600_h.jpg');
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -14,14 +15,12 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #1c0253;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 2em;
   color: white;
+  padding: 1% 0%;
 }
 
 .App-link {
@@ -36,3 +35,59 @@
     transform: rotate(360deg);
   }
 }
+
+.Search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 0%;
+}
+
+.Search-bar {
+  margin: 4% 0% 3% 0%;
+  min-width: 25%;
+  padding: 1% 0%;
+  text-align: center;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.Container-main {
+  display: flex;
+  justify-content: space-around;
+  padding: 1% 0% 5% 0%;
+}
+
+.Container-results {
+  background-color: #61dafb;
+  width: 40%;
+}
+
+.button {
+  padding: 0.8% 2.4%;
+  font-size: 1em;
+  /* font-weight: bold; */
+  /* text-align: center; */
+  background-color: #1c0253;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.button:hover {
+  padding: 0.8% 2.4%;
+  font-size: 1em;
+  /* font-weight: bold; */
+  /* text-align: center; */
+  background-color: #7748de;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
