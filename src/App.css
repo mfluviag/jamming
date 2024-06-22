@@ -1,7 +1,52 @@
+html {
+  font-size: 18px;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.88rem;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.55rem;
+}
+
+h3, h4, h5, h6 {
+  font-family: 'Work Sans', sans-serif;
+}
+
+h3 {
+  font-size: 1.17rem;
+}
+
 .App {
   text-align: center;
-  background-image: url('./resources/104456_violet-blestyashki-line-download-powerpoint-backgrounds-ppt_2560x1600_h.jpg');
+  height: 100%;
+  background-image: url('./resources/background_photo_desktop.jpg');
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
 }
+
+.App-header {
+  background-color: #010c3f;
+  display: flex;
+  justify-content: center;
+}
+
+.App-header h1 {
+  font-size: 1.88rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0.3rem;
+  color: #fff;
+}
+
+.span-header {
+  color: #6c41ec;
+}
+
 
 /* .App-logo {
   height: 40vmin;
@@ -12,15 +57,6 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #1c0253;
-  display: flex;
-  justify-content: center;
-  font-size: 2em;
-  color: white;
-  padding: 1% 0%;
 }
 
 .App-link {
@@ -36,24 +72,6 @@
   }
 }
 
-.Search-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5% 0%;
-}
-
-.Search-bar {
-  margin: 4% 0% 3% 0%;
-  min-width: 25%;
-  padding: 1% 0%;
-  text-align: center;
-  font-weight: bold;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-}
-
 .Container-main {
   display: flex;
   justify-content: space-around;
@@ -61,33 +79,35 @@
 }
 
 .Container-results {
+  display: flex;
+  flex-direction: column;
   background-color: #61dafb;
   width: 40%;
 }
 
 .button {
-  padding: 0.8% 2.4%;
+  /* display: inline-block; */
+  padding: 0.5em 1em;
   font-size: 1em;
-  /* font-weight: bold; */
-  /* text-align: center; */
+  color: white;
+  border-radius: 20px;
+  border: none;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.search {
   background-color: #1c0253;
-  color: white;
-  border-radius: 20px;
-  border: none;
-  text-transform: uppercase;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.button:hover {
-  padding: 0.8% 2.4%;
-  font-size: 1em;
-  /* font-weight: bold; */
-  /* text-align: center; */
+.search:hover {
   background-color: #7748de;
-  color: white;
-  border-radius: 20px;
-  border: none;
-  text-transform: uppercase;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
+.save {
+  background-color: #7748de;
+}
+
+.save:hover {
+  background-color: #1c0253;
+}

@@ -1,0 +1,33 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6.94rem 0 6.33rem 0;
+    height: 100vh;
+  }
+  
+.login-text {
+    padding: 0;
+    margin: 0 0 2.22rem 0;
+    color: white;
+}
+
+.button {
+    /* display: inline-block; */
+    cursor: pointer;
+    padding: 0.77rem 2rem;
+    font-size: 0.833rem;
+    color: white;
+    border-radius: 54px;
+    border: none;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+  
+.search {
+    background-color: #010c3f;
+}
+
+.search:hover {
+    background-color: #6c41ec;
+}
