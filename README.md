@@ -1,2 +1,2 @@
 # jamming
-Jamming React App from CodeCademy Course
+Jamming React App from CodeCademy Cours
