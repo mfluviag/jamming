@@ -1,0 +1,52 @@
+.track {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(256, 256, 256, 0.8);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.track-information {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.track-action {
+    color: #FFFFFF;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.track-action .off {
+    display: none;
+}
+
+.track-button {
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+}
+
+h3 {
+    color: #FFFFFF;
+    margin: 0;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: left;
+}
+
+p {
+    color: rgba(256, 256, 256, 0.8);
+    margin: 0;
+    font-size: 0.85rem;
+    font-weight: 300;
+    text-align: left;
+}
