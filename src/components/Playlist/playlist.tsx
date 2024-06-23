@@ -3,8 +3,11 @@ import Tracklist from "../Tracklist/tracklist";
 import spotify from "../../util/Spotify";
 import './playlist.css';
 import { SearchResultsProps } from "../../types";
+import { useAuth } from "../../routes/Callback/auth-provider";
 
 const Playlist: React.FC<SearchResultsProps> = ({ tracks, moveTrack }) => {
+
+    const { token } = useAuth();
 
     const [playlistInput, setPlaylistInput] = useState<string>("");
 
@@ -13,8 +16,12 @@ const Playlist: React.FC<SearchResultsProps> = ({ tracks, moveTrack }) => {
     }
 
     const handleClick = () => {
-        const trackUris = tracks.map(track => track.uri)
-        spotify.createPlaylist(trackUris, playlistInput);
+        if(!playlistInput) {
+            alert("Must provide a name to your playlist");
+        } else {
+            const trackUris = tracks.map(track => track.uri)
+            spotify.createPlaylist(trackUris, playlistInput, token);    
+        }
     }
 
     return (

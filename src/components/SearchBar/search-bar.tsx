@@ -3,8 +3,12 @@ import spotify from '../../util/Spotify'
 import './search-bar.css';
 // import fetch from 'node-fetch';
 import { SearchBarProps, Track } from '../../types';
+import { useAuth } from '../../routes/Callback/auth-provider';
 
 const SearchBar: React.FC<SearchBarProps> = ({ setResponseData }) => {
+
+    // importing valid token
+    const { token } = useAuth();
 
     // Setting States
     const [userInput, setUserInput] = useState<string>("");
@@ -15,7 +19,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ setResponseData }) => {
 
     const handleClick = async () => {
         try {
-            const tracks: Track[] | undefined = await spotify.search(userInput);  // we await so reponseData not set until promise has returned
+            const tracks: Track[] | undefined = await spotify.search(userInput, token);  // we await so reponseData not set until promise has returned
             setResponseData(tracks ?? []);
         } catch (error) {
             console.error(`Error fetching tracks: ${error}`)

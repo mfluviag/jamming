@@ -2,7 +2,7 @@ import './home.css';
 import SearchBar from '../../components/SearchBar/search-bar';
 import SearchResults from '../../components/SearchResults/search-results';
 import Playlist from '../../components/Playlist/playlist';
-import Tracklist from '../../components/Tracklist/tracklist';
+// import Tracklist from '../../components/Tracklist/tracklist';
 // import Track from '../../components/Track/track';
 import React, { useState } from 'react';
 import { Track } from '../../types';
